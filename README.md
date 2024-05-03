@@ -11,7 +11,7 @@ To clone onto your computer, open a new VS Code window, and select "clone reposi
 ```
 ls
 ```
-### To change to a directory you need to reach (like Downloads, or FinalProj), type this in terminal
+### To change to a directory you need to reach (like Downloads, or FinalProj), type this in terminal without parentheses
 ```
 cd (name of directory)
 ```
