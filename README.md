@@ -10,6 +10,6 @@ To clone onto your computer, open a new VS Code window, and select "clone reposi
 When ready to submit your changes, run the follwing in the VSCode terminal:
 ```
 git add .
-git commit -m "(enter a brief message of your changes"
+git commit -m "(enter a brief message of your changes)"
 git push 
 ```
