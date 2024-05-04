@@ -6,7 +6,8 @@ body{
 
 /* Navbar Items */
 .nav-collapse a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: white;
   }
     
 @font-face {
@@ -31,7 +32,7 @@ float: right;
 }
 
 .nav-toggle:before {
-color: white; /* edit this to change the icon color */
+color: #A9DDD6; /* edit this to change the icon color */
 font: normal 28px/55px "responsivenav"; /* edit font-size (28px) to change the icon size */
 text-transform: none;
 text-align: center;
@@ -74,13 +75,8 @@ zoom: 1;
 .nav-collapse.opened {
 max-height: 9999px;
 }
-.logo {
-text-decoration: none;
-font-weight: bold;
-line-height: 55px;
-padding: 0 20px;
-color: white;
-}
+
+
 
 .fixed {
 position: fixed;
@@ -105,36 +101,51 @@ justify-content: end;
 .nav-collapse a {
 text-decoration: none;
 padding: 0.7em 1em;
-color: white;
+color: #A9DDD6;
 width: 100%;
 display: block;
+font-size: 20px;
 }
 
 .nav-collapse ul ul a {
 padding-left: 2em;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Header Content Area */
 header{
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: #91ADC2;
-    padding: 10px;
-    margin: 10px;
+    /* background-color: #91ADC2; */
+    background-color: #637a91;
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+}
+.headertop {
+    margin-left: 15px;
+    margin-right: 50px;
 }
 
-.headerbot{
+/* .headerbot{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
 main{
-    background-color: white;
+    background-color: #C1B8C8;
     padding: 10px;
     margin: 10px;
 }
@@ -183,7 +194,7 @@ transition: all .4s;
     .nav-collapse li {
         width: auto;
     }
-
+   
     .nav-collapse a {
         padding: 1.02em 2em;
         text-align: center;
@@ -202,3 +213,216 @@ transition: all .4s;
         display: none;
     }
 }  
+
+
+
+
+
+
+
+/* Stuff for experience.html */
+
+.exp-top {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    align-items: center;
+    background-color: #C1B8C8;
+    margin-bottom: 50px;
+    padding: 0 10px; 
+}
+
+.exp-top h1 {
+    grid-column: 2 / 3; 
+    text-align: center; 
+    margin: 0;
+    color: white;
+    font-size: 50px;
+}
+
+.exp-button {
+    grid-column: 3 / 4; 
+    justify-self: end; 
+    padding: 10px 10px; 
+    background-color: #637a91; 
+    color: white; 
+    border: none;
+    cursor: pointer; 
+    font-size: 14px; 
+    border-radius: 5px; 
+}
+
+.exp-button:hover {
+    background-color: #A9DDD6; 
+}
+  
+
+
+.button-link {
+    text-decoration: none; 
+    color: inherit; 
+    grid-column: 3 / 4; 
+    justify-self: end; 
+}
+
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.exp-item {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+}
+
+.exp-img {
+    width: 20%; 
+    min-width: 50px; 
+    height: auto;
+    background-color: #ddd; 
+}
+
+.exp-text {
+    display: flex;
+    flex-direction: column;
+    width: 80%; 
+    padding: 0 10px;
+    
+}
+
+.exp-text p {
+    flex: 1;
+    padding: 5px;
+    background-color: #E2E2E2; 
+    margin: 5px 0;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+    .experience-section {
+        flex-direction: row; /* Line items in a row on desktop view */
+        flex-wrap: wrap;
+    }
+
+    .exp-item {
+        width: 50%; /* Each item takes half the width on desktop view */
+    }
+
+    .exp-img {
+        width: 20%; 
+    }
+
+    .exp-text {
+        width: 80%; /* Text takes space relative to the image */
+    }
+}
+
+
+
+/* Section for list_business.html */
+
+.form-header {
+    text-align: center; /* Center aligns the text */
+    margin: 20px 0; /* Add some margin for spacing */
+    padding: 10px 20px; /* Padding to create space inside the bubble */
+    background-color: #A9DDD6; /* Green background color, adjust the color code as needed */
+    color: white; /* Adjust color as needed */
+    border-radius: 20px; /* Rounded corners for the bubble effect */
+    width: 40%; /* Fits the content width */
+    margin-left: auto; /* These two margins auto will center the block horizontally */
+    margin-right: auto;
+    margin-bottom: 43px;
+    Margin-top: 30px;
+}
+
+.form-header h1 {
+    color: white; /* White text color */
+    margin: 0; /* Remove default margin of h1 */
+    font-size: 40px; /* Adjust font size as necessary */
+}
+
+.form-container {
+    width: 90%;
+    max-width: 1140px; /* Matched to the screenshot width for consistency */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.info-section, .bio-section {
+    background-color: #FFFFFF; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 10px solid #ccc; /* Adding a light gray border */
+    margin: 10px;
+    border-color: #637a91;
+    
+}
+
+.info-section {
+    flex: 1; /* Equal flex to bio-section to maintain even spacing */
+    padding-right: 50px;
+}
+
+.info-section h2{
+    text-align: center;
+}
+
+.bio-section h2{
+    text-align: center;
+}
+
+.bio-section {
+    flex: 2; /* Slightly larger to accommodate more content */
+    padding-right: 50px;
+}
+
+.info-section h2, .bio-section h2 {
+    color: #7a8b99;
+}
+
+input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 200px; 
+}
+
+
+.submit{
+    color: #A9DDD6;
+    text-decoration: none;
+  }
+
+  .submit:hover {
+    color: white;
+  }
+
+  
+
+  /* footer for all */  
+
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A9DDD6;
+    background-color: #637a91;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  
