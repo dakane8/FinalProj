@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/services.css">
     <title>Barber Shop</title>
-    <script src="js/responsive-nav.js"></script></head>
+    <script src="js/responsive-nav.js"></script>
+</head>
 <body>
     <header>
         <div class="headertop">
@@ -20,45 +20,36 @@
                  <li class="menu-item"><a href="experience.html" data-scroll>experience</a></li>
                  <li class="menu-item"><a href="services.html" data-scroll>services</a></li>
                  <li class="menu-item"><a href="contact.html" data-scroll>contact</a></li>
-                 <li class="menu-item"><a href="login.html" data-scroll><b>LOG IN</b></a></li>
+                 <li class="menu-item"><a href="login.html" data-scroll><b>LOG IN </b></a></li>
                 </ul>
              </nav>
         </div>
     </header>
 
     <main>
-
-        
-        <h1>Services</h1>
-
-        <div class="serv">
-            <p class="type">Short Haircut</p>
-            <p class="desc">"Sharp and Sleek" Classic Crew Cut</p>
-            <p class="price">$20</p>
+        <div class="form-header">
+            <h1>LOG IN</h1>
         </div>
-
-        <div class="serv">
-            <p class="type">Long Haircut</p>
-            <p class="desc">"Luxurious Layers" Signature Long Style"</p>
-            <p class="price">$30</p>
+        <div class="form-container">
+            <div class="info-section">
+                <h2>Your Info:</h2>
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </form>
+            </div>
+            
+            <button id="primary" style="width: 40%;">
+                <a href="myprof.html" style="padding: 30%; font-size: xx-large; text-decoration: none; color: white;">Submit</a>
+            </button>
         </div>
-
-        <div class="serv">
-            <p class="type">Beard Trim
-            </p>
-            <p class="desc">Beard Sculpting and Precision Grooming</p>
-            <p class="price">$25</p>
-        </div>
-
     </main>
 
     <footer>
-        <p> © Mikes Barber </p>
-
+        <p> © Mikes Barber </p>\
     </footer>
-    
+
 </body>
-<script src="js/fastclick.js"></script>
-<script src="js/scroll.js"></script>
-<script src="js/fixed-responsive-nav.js"></script>
 </html>

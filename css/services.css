@@ -1,0 +1,45 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 80vh;
+}
+
+h1{
+    color: white;
+    background-color:#637A91;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.serv{
+    width: 80vw;
+    height: auto;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #637A91;
+    border-radius: 10px;
+    
+}
+
+.type{
+    left: 0;
+}
+
+.desc{
+    align-self: center;
+
+}
+
+.price{
+    align-self: end;
+}
+
+.serv p{
+    color: black;
+    font-size: x-large;
+}
